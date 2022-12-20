@@ -12,10 +12,10 @@ class ShopHeader extends HTMLElement {
                     <h1>Bezhanoff Shop</h1>
                 </div>
                 <div class="navbar-content" id="headerNavContent">
-                    <a id="aIndex" href="/Project/index.html">Главная</a>
-                    <a id="aCatalog" href="/Project/pages/catalog.html">ЛР 1</a>
-                    <a id="aAscii" href="/Project/pages/ascii.html">ASCII</a>
-                    <a id="aTable" href="/Project/pages/table.html">Таблица</a>
+                    <a id="aIndex" href="/index.html">Главная</a>
+                    <a id="aCatalog" href="/pages/catalog.html">ЛР 1</a>
+                    <a id="aAscii" href="/pages/ascii.html">ASCII</a>
+                    <a id="aTable" href="/pages/table.html">Таблица</a>
                     <a href="javascript:void(0)" class="icon" onclick="hamburgerHandler()">&#9776;</a>
                 </div>
             </div>
