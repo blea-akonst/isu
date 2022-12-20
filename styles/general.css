@@ -1,0 +1,36 @@
+@import url("./components/header.css");
+@import url("./components/footer.css");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #ECFAF5;
+    font: 20px/1.5 'PT Sans', serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+    font-weight: 100;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    margin: 110px auto auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 1 0 auto;
+}
+
+.content img {
+    width: 90%;
+    height: auto;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5)
+}

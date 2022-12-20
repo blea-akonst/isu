@@ -1,0 +1,96 @@
+shop-header {
+    width: 100%;
+    background: #ECFAF5;
+    position: fixed;
+    text-align: center;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+shop-header .img-logo {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+shop-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+shop-header .header-content {
+    margin: auto;
+    padding: 0 45px;
+    max-width: 1000px;
+}
+
+shop-header .navbar-content {
+    float: right;
+    margin-top: 20px;
+}
+
+shop-header .navbar-content a {
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+    padding-top: .2em;
+    text-decoration: none;
+    color: #767d88;
+}
+
+shop-header .navbar-content a:hover {
+    color: #000000;
+}
+
+shop-header .navbar-content .icon {
+    display: none;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+@media screen and (max-width: 800px) {
+    shop-header .navbar-content a {
+        display: none;
+    }
+
+    shop-header .navbar-content .icon {
+        display: block;
+        text-decoration: none;
+        float: right;
+        color: #000000;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    shop-header .header-content .responsive {
+        position: relative;
+    }
+
+    shop-header .header-logo.responsive {
+        position: absolute;
+        top: 20%;
+    }
+
+    shop-header .header-content .responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    shop-header .header-content .responsive a {
+        float: none;
+        position: relative;
+        right: 20px;
+        bottom: 10px;
+        display: block;
+        text-align: left;
+    }
+}
+
