@@ -4,7 +4,7 @@ class ShopHeader extends HTMLElement {
         this.innerHTML = `
             <div class="header-content">
                 <div class="header-logo" id="logo">
-                    <object data="../images/casino-logo.svg"
+                    <object data="/images/casino-logo.svg"
                           width="70"
                           height="70"
                           class="img-logo">
@@ -12,10 +12,10 @@ class ShopHeader extends HTMLElement {
                     <h1>Bezhanoff Shop</h1>
                 </div>
                 <div class="navbar-content" id="headerNavContent">
-                    <a id="aIndex" href="index.html">Главная</a>
-                    <a id="aCatalog" href="catalog.html">ЛР 1</a>
-                    <a id="aAscii" href="ascii.html">ASCII</a>
-                    <a id="aTable" href="table.html">Таблица</a>
+                    <a id="aIndex" href="/Project/index.html">Главная</a>
+                    <a id="aCatalog" href="/Project/pages/catalog.html">ЛР 1</a>
+                    <a id="aAscii" href="/Project/pages/ascii.html">ASCII</a>
+                    <a id="aTable" href="/Project/pages/table.html">Таблица</a>
                     <a href="javascript:void(0)" class="icon" onclick="hamburgerHandler()">&#9776;</a>
                 </div>
             </div>
