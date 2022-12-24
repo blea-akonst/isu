@@ -61,6 +61,7 @@ class ShopHeader extends HTMLElement {
             }
             
             function getImagesPath() {
+                const pathName = window.location.pathname;
                 if (pathName.includes('index.html') || pathName.charAt(pathName.length - 1) === '/') {
                     return './images/'
                 }
