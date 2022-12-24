@@ -4,7 +4,7 @@ class ShopHeader extends HTMLElement {
         this.innerHTML = `
             <div class="header-content">
                 <div class="header-logo" id="logo">
-                    <object data="../images/casino-logo.svg"
+                    <object data="${getImagesPath()} + casino-logo.svg"
                           width="70"
                           height="70"
                           class="img-logo">
@@ -58,6 +58,13 @@ class ShopHeader extends HTMLElement {
                 }
                 
                 document.location.href = link;
+            }
+            
+            function getImagesPath() {
+                if (pathName.includes('index.html') || pathName.charAt(pathName.length - 1) === '/') {
+                    return './images/'
+                }
+                return '../images/';
             }
         `
 
