@@ -4,7 +4,7 @@ class ShopHeader extends HTMLElement {
         this.innerHTML = `
             <div class="header-content">
                 <div class="header-logo" id="logo">
-                    <object data="../../images/casino-logo.svg"
+                    <object data="../images/casino-logo.svg"
                           width="70"
                           height="70"
                           class="img-logo">
