@@ -4,11 +4,6 @@ class ShopHeader extends HTMLElement {
         this.innerHTML = `
             <div class="header-content">
                 <div class="header-logo" id="logo">
-                    <object data=`getImagesPath() + "casino-logo.svg"`
-                          width="70"
-                          height="70"
-                          class="img-logo">
-                    </object>
                     <h1>Bezhanoff Shop</h1>
                 </div>
                 <div class="navbar-content" id="headerNavContent">
