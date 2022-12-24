@@ -38,11 +38,11 @@ class ShopHeader extends HTMLElement {
             }
             
             function goToPage(pageName) {
-                const href = document.location.href;
+                const pathName = window.location.pathname;
                 let link = '';
                 
                 switch(true) {
-                   case href.includes('index.html'):
+                   case (pathName.includes('index.html') || pathName.charAt(pathName.length - 1) === '/'):
                         if (pageName === 'index') {
                             link = './index.html';
                             break;
@@ -68,20 +68,20 @@ class ShopHeader extends HTMLElement {
 customElements.define('shop-header', ShopHeader);
 
 window.addEventListener('DOMContentLoaded', () => {
-    const href = document.location.href;
+    const pathName = window.location.pathname;
     let elementId = '';
 
     switch(true) {
-        case href.includes('index.html'):
+        case (pathName.includes('index.html') || pathName.charAt(pathName.length - 1) === '/'):
             elementId = 'aIndex';
             break;
-        case href.includes('catalog.html'):
+        case pathName.includes('catalog.html'):
             elementId = 'aCatalog';
             break;
-        case href.includes('ascii.html'):
+        case pathName.includes('ascii.html'):
             elementId = 'aAscii';
             break;
-        case href.includes('table.html'):
+        case pathName.includes('table.html'):
             elementId = 'aTable';
             break;
     }
