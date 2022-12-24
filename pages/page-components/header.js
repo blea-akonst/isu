@@ -12,11 +12,11 @@ class ShopHeader extends HTMLElement {
                     <h1>Bezhanoff Shop</h1>
                 </div>
                 <div class="navbar-content" id="headerNavContent">
-                    <a id="aIndex" href="/index.html">Главная</a>
-                    <a id="aCatalog" href="/pages/catalog.html">ЛР 1</a>
-                    <a id="aAscii" href="/pages/ascii.html">ASCII</a>
-                    <a id="aTable" href="/pages/table.html">Таблица</a>
-                    <a href="javascript:void(0)" class="icon" onclick="hamburgerHandler()">&#9776;</a>
+                    <a href="#" id="aIndex" onclick="goToPage('index');">Главная</a>
+                    <a href="#" id="aCatalog" onclick="goToPage('catalog');">ЛР 1</a>
+                    <a href="#" id="aAscii" onclick="goToPage('ascii');">ASCII</a>
+                    <a href="#" id="aTable" onclick="goToPage('table');">Таблица</a>
+                    <a href="#" class="icon" onclick="hamburgerHandler();">&#9776;</a>
                 </div>
             </div>
         `;
@@ -35,6 +35,29 @@ class ShopHeader extends HTMLElement {
                     nav.className = "navbar-content";
                     logo.className = "header-logo";
                 }
+            }
+            
+            function goToPage(pageName) {
+                const href = document.location.href;
+                let link = '';
+                
+                switch(true) {
+                   case href.includes('index.html'):
+                        if (pageName === 'index') {
+                            link = './index.html';
+                            break;
+                        }
+                        link = './pages/' + pageName + '.html';
+                        break;
+                   default:
+                        if (pageName === 'index') {
+                            link = '../index.html';
+                            break;
+                        }
+                        link = './' + pageName + '.html';
+                }
+                
+                document.location.href = link;
             }
         `
 
