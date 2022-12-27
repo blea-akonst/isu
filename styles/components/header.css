@@ -45,7 +45,7 @@ shop-header .navbar-content a:hover {
     color: #000000;
 }
 
-shop-header .navbar-content .icon {
+shop-header .navbar-content #icon {
     display: none;
 }
 
@@ -60,7 +60,7 @@ shop-header .navbar-content .icon {
         display: none;
     }
 
-    shop-header .navbar-content .icon {
+    shop-header .navbar-content #icon {
         display: block;
         text-decoration: none;
         float: right;
@@ -78,7 +78,7 @@ shop-header .navbar-content .icon {
         top: 20%;
     }
 
-    shop-header .header-content .responsive .icon {
+    shop-header .header-content .responsive #icon {
         position: absolute;
         right: 0;
         top: 0;

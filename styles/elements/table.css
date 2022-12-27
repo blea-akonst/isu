@@ -1,14 +1,19 @@
-#table,
-#table th,
-#table td {
+.shop-table {
+    min-width: 20vw;
+}
+
+.shop-table,
+.shop-table th,
+.shop-table td {
+    margin: 10px;
     border-collapse: collapse;
     border: 1px solid black;
 }
 
-#table tbody tr:nth-child(odd){
+.shop-table tbody tr:nth-child(odd){
     background: #fff;
 }
 
-#table tbody tr:nth-child(even){
+.shop-table tbody tr:nth-child(even){
     background: #F7F7F7;
 }
