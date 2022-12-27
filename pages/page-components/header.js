@@ -11,7 +11,8 @@ class ShopHeader extends HTMLElement {
                     <a href="#" id="aCatalog" onclick="goToPage('catalog');">ЛР 1</a>
                     <a href="#" id="aAscii" onclick="goToPage('ascii');">ASCII</a>
                     <a href="#" id="aTable" onclick="goToPage('table');">Таблица</a>
-                    <a href="#" class="icon" onclick="hamburgerHandler();">&#9776;</a>
+                    <a href="#" id="aForm" onclick="goToPage('form');">ЛР 5</a>
+                    <a href="#" id="icon" onclick="hamburgerHandler();">&#9776;</a>
                 </div>
             </div>
         `;
@@ -30,6 +31,13 @@ class ShopHeader extends HTMLElement {
                     nav.className = "navbar-content";
                     logo.className = "header-logo";
                 }
+                
+                $(window).resize(function() {
+                    let height = $('shop-header').height();
+                    $('.content').css({
+                        'margin-top': height
+                    });
+                }).trigger('resize');
             }
             
             function goToPage(pageName) {
@@ -79,6 +87,9 @@ window.addEventListener('DOMContentLoaded', () => {
         case pathName.includes('table.html'):
             elementId = 'aTable';
             break;
+        case pathName.includes('form.html'):
+            elementId = 'aForm';
+            break;
     }
 
     const element = document.getElementById(elementId);
@@ -97,4 +108,12 @@ window.addEventListener('DOMContentLoaded', () => {
             shopHeader.removeClass('shadow');
         }
     });
+
+    $(window).resize(function() {
+        console.log('window resize jquery func');
+        let height = $('shop-header').height();
+        $('.content').css({
+            'margin-top': height
+        });
+    }).trigger('resize');
 })
