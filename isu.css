@@ -22,7 +22,7 @@ body {
     margin-right: auto;
 }
 .theme-isu #main-navbar .navbar-header a {
-    background: url(https://akonst.github.io/vk_logo.png) no-repeat;
+    background: url(https://blea-akonst.github.io/vk_logo.png) no-repeat;
     padding: 0;
     width: 32px!important;
     height: 32px!important;
@@ -111,7 +111,7 @@ html body .btn[disabled] {
     display: none;
 }
 .theme-isu .breadcrumb {
-    background: url(https://akonst.github.io/background.webp?maxwidth=760&fidelity=grand) no-repeat center center!important;
+    background: url(https://blea-akonst.github.io/background.webp?maxwidth=760&fidelity=grand) no-repeat center center!important;
     padding: 0!important;
     padding-bottom: 57%!important;
     background-size: cover!important;
