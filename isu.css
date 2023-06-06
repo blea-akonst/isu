@@ -13,7 +13,7 @@ body {
     padding-left: 0!important;
 }
 .theme-isu #main-navbar #main-menu-toggle {
-    background: #da7f17!important;
+    background: #527499!important;
     display: none;
 }
 #main-navbar .navbar-inner {
@@ -41,13 +41,13 @@ body {
 }
 .btn {
     font-size: 14px!important;
-    background: #e47d08!important;
+    background: #527499!important;
     border: 0!important;
     border-radius: 47px!important;
     color: white!important;
 }
 .btn:hover {
-    background: #e47d08!important;
+    background: #527499!important;
 }
 html body .btn[disabled] {
     border: 1px solid rgba(0,0,0,.12)!important;
@@ -82,7 +82,7 @@ html body .btn[disabled] {
     background: #f0f0f0!important;
 }
 #main-navbar li > a.user-menu::before {
-    background: #da7f17!important;
+    background: #527499!important;
 }
 
 #content-wrapper {
